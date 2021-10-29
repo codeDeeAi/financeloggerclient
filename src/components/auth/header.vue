@@ -215,6 +215,19 @@
 
                             <!-- Each Account Ends -->
                           </nav>
+                          <!-- Logout -->
+                          <div
+                            class="flex items-center justify-end md:flex-1 lg:w-0"
+                          >
+                            <button
+                              type="button"
+                              @click.prevent="logout()"
+                              class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-2 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-600 hover:bg-red-700"
+                            >
+                              Sign out
+                            </button>
+                          </div>
+                          <!-- Logout Ends -->
                         </div>
                       </div>
                     </div>
@@ -309,7 +322,7 @@ export default {
     },
   },
   created() {
-    // Statrt up Methods
+    // Start up Methods
     this.getAccounts();
     this.sidebar = this.getSidebar;
   },

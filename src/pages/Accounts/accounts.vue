@@ -184,7 +184,7 @@
       <a
         v-for="(account, index) in accounts"
         :key="index"
-        href="#!"
+        :to="`/logs/${account.name}/${account.id}`"
         class="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-900 w-64 m-auto relative hover:shadow-md"
       >
         <div class="w-full h-full text-center">
