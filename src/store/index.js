@@ -9,7 +9,8 @@ export default new Vuex.Store({
         // darkMode: false,
 
         // API Base URL
-        api_url: "http://127.0.0.1:5000/",
+        // api_url: "http://127.0.0.1:5000/", // Local development
+        api_url: "https://finance-logger-api.herokuapp.com/", // Heroku
 
         // Authentication and user details
         auth: {
